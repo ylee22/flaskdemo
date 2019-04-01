@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!doctype html>
+<title>A short quiz</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style_lulu.css')}}'>
+<div class=page>
+  <h1>Enter the stock ticker</h1>
+  <div class=metanav>
+
+<form id='stockinfo' method='post' action='/' > <!-- action is the URL you want to move to next-->
+   <p>
+   Stock Ticker: <input type='text' name='stocktick' />
+   </p>
+   <p>
+   Start Date: <input type='text' name='startdate' />
+   </p>
+   <p>
+   End Date: <input type='text' name='enddate' />
+   </p>
+   <p>
+   <input type='submit' value='Submit' /> <!-- value is the text that will appear on the button. -->
+   </p>
+</form>
+
+</div>
+</div>
